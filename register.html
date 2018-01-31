@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Innovatory - Coming soon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  		<a class="navbar-brand" href="#">Navbar</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  		  <ul class="navbar-nav">
+  		    <li class="nav-item">
+  		      <a class="nav-link" href="#">FORUM</a>
+  		    </li>
+  		    <li class="nav-item">
+  		      <a class="nav-link" href="#">ABOUT US</a>
+  		    </li>
+  		    <li class="nav-item">
+  		      <a class="nav-link" href="#">SIGN IN</a>
+  		    </li>
+  		    <li class="nav-item">
+  		      <a class="nav-link" href="#">SIGN UP</a>
+  		    </li>    
+  		  </ul>
+  		</div>  
+	</nav>
+  <div class="container">    
+    <form name="Student Registration">      
+      Full Name       : <input type="text" name="studentname" required /> <br />
+      NRC No.         : <input type="text" name="nrc" required /> <br />
+      University      : <select name="university">
+                            <option value="ytu">YTU</option>
+                    </select>
+                    <br />
+      Major           : <select name="major">
+                            <option value="archi">Architecture</option>
+                            <option value="ceit">CEIT</option>
+                            <option value="civil">Civil</option>
+                            <option value="ec">Electronics</option>
+                            <option value="ep">Electrical Power</option>
+                            <option value="me">Mechanical</option>
+                            <option value="mce">Mechatronics</option>
+                            <option value="met">Metallurgy</option>
+                            <option value="mn">Mining</option>
+                            <option value="pe">Petroleum</option>
+                            <option value="tex">Textile</option>
+                    </select>
+                    <br />
+      Address          : <textarea name="address" required></textarea> <br />
+      Phone No.        : <input type="phone" name="phone" required /> <br />
+      Email            : <input type="email" name="email" required /> <br />
+      Password         : <input type="password" name="password" required /> <br />
+      Confirm Password : <input type="password" required /> <br />
+    </form>
+
+    <form name="Club Registration">      
+      Club Name         : <input type="text" name="clubname" required /> <br />
+      University        : <select name="university">
+                            <option value="ytu">YTU</option>
+                      </select>
+                      <br />
+      No. of Members    : <input type="number" name="noofmember" required /> <br />
+      Description       : <textarea name="desc" required></textarea> <br />
+      Email             : <input type="email" name="email" required /> <br />
+      Password          : <input type="password" name="password" required /> <br />
+      Confirm Password  : <input type="password" required /> <br />
+    </form>
+  </div>
+</body>
+
+</html>
+
