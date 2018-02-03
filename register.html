@@ -32,50 +32,140 @@
   		  </ul>
   		</div>  
 	</nav>
-  <div class="container">    
-    <form class="form-horizontal" name="Student Registration" action="">      
-      Full Name       : <input type="text" name="studentname" required /> <br />
-      NRC No.         : <input type="text" name="nrc" required /> <br />
-      University      : <select name="university">
-                            <option value="ytu">YTU</option>
-                    </select>
-                    <br />
-      Major           : <select name="major">
-                            <option value="archi">Architecture</option>
-                            <option value="ceit">CEIT</option>
-                            <option value="civil">Civil</option>
-                            <option value="ec">Electronics</option>
-                            <option value="ep">Electrical Power</option>
-                            <option value="me">Mechanical</option>
-                            <option value="mce">Mechatronics</option>
-                            <option value="met">Metallurgy</option>
-                            <option value="mn">Mining</option>
-                            <option value="pe">Petroleum</option>
-                            <option value="tex">Textile</option>
-                    </select>
-                    <br />
-      Address          : <textarea name="address" required></textarea> <br />
-      Phone No.        : <input type="phone" name="phone" required /> <br />
-      Email            : <input type="email" name="email" required /> <br />
-      Password         : <input type="password" name="password" required /> <br />
-      Confirm Password : <input type="password" required /> <br />
-      <button type="submit" name="ssubmit">Submit</button>
-    </form>
-
-    <form name="Club Registration">      
-      Club Name         : <input type="text" name="clubname" required /> <br />
-      University        : <select name="university">
-                            <option value="ytu">YTU</option>
-                      </select>
-                      <br />
-      No. of Members    : <input type="number" name="noofmember" required /> <br />
-      Description       : <textarea name="desc" required></textarea> <br />
-      Email             : <input type="email" name="email" required /> <br />
-      Password          : <input type="password" name="password" required /> <br />
-      Confirm Password  : <input type="password" required /> <br />
-      <button type="submit" name="csubmit">Submit</button>
+  <div class="container"> 
+  <h2>Sign Up</h2>
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a data-toggle="tab" href="#student" class="nav-link active">For Students</a></li>
+    <li class="nav-item"><a data-toggle="tab" href="#club" class="nav-link">For Clubs</a></li>  
+  </ul>
+  <br />
+  <div class="tab-content">
+    <div id="student" class="tab-pane active">
+    <form class="form-horizontal" name="Student Registration" action="">        
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="studentname">Full Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="studentname" placeholder="Enter full name" name="studentname" required />
+        </div>
+      </div>     
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="suniversity">Select university:</label>
+        <div class="col-sm-10">
+        <select class="form-control" id="suniversity" name="suniversity">
+            <option value="ytu">YTU</option>
+        </select>
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="major">Select major:</label>
+        <div class="col-sm-10">
+        <select class="form-control" id="major" name="major">
+            <option value="archi">Architecture</option>
+            <option value="ceit">CEIT</option>
+            <option value="civil">Civil</option>
+            <option value="ec">Electronics</option>
+            <option value="ep">Electrical Power</option>
+            <option value="me">Mechanical</option>
+            <option value="mce">Mechatronics</option>
+            <option value="met">Metallurgy</option>
+            <option value="mn">Mining</option>
+            <option value="pe">Petroleum</option>
+            <option value="tex">Textile</option>
+        </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="address">Address:</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" name="address" rows="5" id="address" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="phone">Phone:</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="semail">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="semail" placeholder="Enter email" name="semail" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="spwd1">Password:</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="spwd1" placeholder="Enter password" name="spwd1" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="spwd2">Re-enter Password:</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="spwd2" placeholder="Re-enter password" name="spwd2" required />
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default" name="ssubmit">Submit</button>
+        </div>
+      </div>
     </form>
   </div>
+  <div id="club" class="tab-pane fade">
+    <form class="form-horizontal" name="Club Registration" action="">      
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="clubname">Club Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="clubname" placeholder="Enter club name" name="clubname" required />
+        </div>
+      </div>   
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cuniversity">Select university:</label>
+        <div class="col-sm-10">
+        <select class="form-control" id="cuniversity" name="cuniversity">
+            <option value="ytu">YTU</option>
+        </select>
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="nom">No. of Members:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="nom" placeholder="Enter number of members" name="nom" min="0" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="desc">Description:</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" name="desc" rows="5" id="desc" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cemail">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="cemail" placeholder="Enter email" name="cemail" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cpwd1">Password:</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="cpwd1" placeholder="Enter password" name="cpwd1" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cpwd2">Re-enter Password:</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="cpwd2" placeholder="Re-enter password" name="cpwd2" required />
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default" name="csubmit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 </body>
 
 </html>
