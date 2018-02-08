@@ -2,3 +2,63 @@ To be added
 ------------
 
 - Gender
+- Font Awesome Icons
+
+
+
+To be improved
+------------
+
+- Justify tabs
+
+
+
+
+
+---------------------------------MMM Patch Notes-------------------------------
+
+Forum
+====-----====
+
+Site-Related
+------------
+
+News
+Help
+Feedbacks
+
+Clubs and Institutes
+--------------------
+CST
+
+
+
+Community
+---------
+Activities
+Showcases
+Tutorials
+
+Off-topics
+-----------
+Forum-Games
+Chit-Chat
+Gaming
+Arts
+
+
+
+Ninja Button (not really, it just blended in)
+-------------
+
+  <div class="card col-sm-6 btn-success text-white text-center">
+    <div class="card-body">
+      <h4 class="card-title">Activities</h4>
+      <i class="fa fa-android" style="font-size:48px;color:white"></i>
+      <p class="card-text">Here goes activities hosted by students themselves.</p>
+    </div>
+  </div>
+ 
+
+
+--------------
