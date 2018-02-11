@@ -44,3 +44,107 @@ Ninja Button (not really, it just blended in)
 
 
 --------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Innovatory - Coming soon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href=""#><img src="images/logo.png" alt="Logo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">FORUM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SIGN IN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SIGN UP</a>
+          </li>    
+        </ul>
+      </div>  
+  </nav>
+  <br /> <br /> 
+  <div class="container">
+<h2 class="text-center">Topic Title</h2>
+<hr />
+<div style="margin: 0 auto; display:table;">
+ <ul class="pagination">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+ </div>
+ 
+    <div class="card bg-light text-dark" style="margin-top:5px;">
+    <div class="card-body">
+      <div  style="float:left; padding-right:20px; border-right: 1px solid gray; width:150px;">
+        <figure>
+        <a href="profile.html"><figcaption class="text-center">Kyi Shoon Le</figcaption></a><br /><img src="http://jardinecycles.co.uk/wp-content/uploads/2016/04/RIA-125x125px.gif" alt="Profile Picture" style="width:25px; height:25px" class="img-fluid" />
+        </figure>
+        </div>
+        <div style="float:left; padding-left:50px;">
+        <p>I support Ducks!</p>
+        </div>
+        <br />
+        <small>
+        <span style="right:10px; bottom:10px; position: absolute;">Replied on 11:07 PM 2/8/2018</span>
+        <span style="right:10px; bottom:25px; position: absolute;">Edited on 8:27 PM 2/9/2018</span>
+        </small>
+    </div>
+  </div>
+     <div class="card bg-light text-dark" style="margin-top:5px;">
+    <div class="card-body">
+      <div  style="float:left; padding-right:20px; border-right: 1px solid gray; width:150px;">
+        <figure>
+        <a href="profile.html"><figcaption class="text-center">Min Maung Maung</figcaption></a><br /><img src="http://jardinecycles.co.uk/wp-content/uploads/2016/04/RIA-125x125px.gif" alt="Profile Picture" style="width:125px; height:125px" class="img-fluid" />
+        </figure>
+        </div>
+        <div style="float:left; padding-left:50px;">
+        <p>I thought you hated ducks. Who the duck are you? OMG. Ayaaaan chit ya taet chit tu laay.</p>
+        </div>
+        <br />
+        <small>
+        <span style="right:10px; bottom:10px; position: absolute;">Replied on 11:07 PM 2/8/2018</span>
+        </small>
+    </div>
+  </div>
+  
+  
+  
+   <br />   
+<div style="margin: 0 auto; display:table;">
+ <ul class="pagination">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+ </div>
+ 
+
+ <hr />
+</div>
+</body>
+
+</html>
+
