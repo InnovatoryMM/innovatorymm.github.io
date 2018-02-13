@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -19,13 +21,13 @@ function nav_close() {
 </script>
 
 </head>
-<body>
+<body style="background-image:url('../images/bg.png'); background-repeat: repeat;">
 
 <div class="w3-sidebar w3-bar-block w3-border-left w3-animate-right" style="display:none; right:0;" id="sidebar">
   <div class="" style="height:76px">
     <button  style="height:76px" class="btn btn-lg btn-block" onclick="nav_close()" class="w3-bar-item w3-large">☰</button>
   </div>
-  <a href="#" class="w3-bar-item"><img src="images/profile.gif" alt="Profile Pic" class="img-fluid rounded-circle" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" /></a>
+  <a href="#" class="w3-bar-item"><img src="../images/profile.gif" alt="Profile Pic" class="img-fluid rounded-circle" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" /></a>
     <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Sign In</a>
     <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Sign Up</a>
     <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Create a Topic</a>
@@ -39,13 +41,64 @@ function nav_close() {
 
 
   <nav class="navbar bg-dark navbar-dark">
-      <a class="navbar-brand" href=""#><img src="images/logo.png" alt="Logo" /></a>
+      <a class="navbar-brand" href=""#><img src="../images/logo.png" alt="Logo" /></a>
       <button class="btn btn-dark btn-lg" onclick="nav_open();">
       ☰
       </button>
   </nav>
-	<div class="container">
-	</div>
+  <br /> <br />	
+    
+<div class="container">
+  <h2 class="text-center">Forum</h2>
+  <hr />
+  
+  <h5 class="text-primary">Innovation Challenge</h5>  
+  <div class="row"> 
+  <a href="#" class="card col-sm-3 bg-warning text-white text-center" style="text-decoration:none; width:400px;">
+     <img class="img-fluid" src="https://scontent.frgn3-1.fna.fbcdn.net/v/t1.0-9/27459914_1634867349883203_2325834600080509578_n.jpg?oh=532052b6752ba278652478638f384300&oe=5AD801F4" alt="Smart Transportation & Traffic Management" style="width:100%">
+  </a>
+  <a href="#" class="card col-sm-3 bg-success text-white text-center" style="text-decoration:none; width:400px;">
+     <img class="img-fluid" src="https://scontent.frgn3-1.fna.fbcdn.net/v/t1.0-9/27540478_1634867393216532_4657345565102138184_n.jpg?oh=72ecd4afb40882629500135d570db423&oe=5B14599B" alt="Smart Campus" style="width:100%">
+  </a>
+  <a href="#" class="card col-sm-3 bg-danger text-white text-center" style="text-decoration:none; width:400px;">
+     <img class="img-fluid" src="https://scontent.frgn3-1.fna.fbcdn.net/v/t1.0-9/27749860_1634867419883196_8055999802894577151_n.jpg?oh=9cd227fc96a066872874e8290d6006fc&oe=5B1E8A05" alt="Smart Public Safety" style="width:100%">
+  </a>
+  <a href="#" class="card col-sm-3 bg-info text-white text-center" style="text-decoration:none; width:400px;">
+     <img class="img-fluid" src="https://scontent.frgn3-1.fna.fbcdn.net/v/t1.0-9/27654476_1634867459883192_698977948843851574_n.jpg?oh=a57a421018ba6d5d244cbe204a1288d3&oe=5B15AAC5" alt="Smart Waste System & Water Management" style="width:100%">
+  </a>
+  </div>
+  <hr />
+  
+  
+  
+  <h5 class="text-danger">Site-related</h5>  
+  <div class="row"> 
+  <a href="#" class="card col-sm-4 bg-danger text-white text-center" style="text-decoration:none;">
+    <div class="card-body">
+      <h4 class="card-title">News</h4>
+      <i class="material-icons" style="font-size:48px;color:white">announcement</i> <br /><br />
+      <p class="card-text font-italic">Official Innovatory News!</p>
+    </div>
+  </a>
+  
+  <a href="#" class="card col-sm-4 bg-danger text-white text-center" style="text-decoration:none;">
+    <div class="card-body">
+      <h4 class="card-title">Feedbacks</h4>
+      <i class="material-icons" style="font-size:48px;color:white">extension</i> <br /><br />
+      <p class="card-text font-italic">Suggest something so that we could improve!</p>
+    </div>
+  </a>  
+  
+  <a href="#" class="card col-sm-4 bg-danger text-white text-center" style="text-decoration:none;">
+    <div class="card-body">
+      <h4 class="card-title">Help</h4>
+      <i class="material-icons" style="font-size:48px;color:white">help</i> <br /><br />
+      <p class="card-text font-italic">Get help from an army of ducks. </p>
+    </div>
+  </a>
+  </div>
+</div>
+<hr />
 </body>
 
 </html>

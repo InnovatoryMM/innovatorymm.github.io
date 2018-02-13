@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Innovatory - Coming soon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+function nav_open() {
+    document.getElementById("sidebar").style.display = "block";
+}
+function nav_close() {
+    document.getElementById("sidebar").style.display = "none";
+}
+</script>
+
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-border-left w3-animate-right" style="display:none; right:0;" id="sidebar">
+  <div class="" style="height:76px">
+    <button  style="height:76px" class="btn btn-lg btn-block" onclick="nav_close()" class="w3-bar-item w3-large">☰</button>
+  </div>
+  <a href="#" class="w3-bar-item"><img src="images/profile.gif" alt="Profile Pic" class="img-fluid rounded-circle" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" /></a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Sign In</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Sign Up</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Create a Topic</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Inbox</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Forum</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">About Us</a>
+
+    <a href="#" class="w3-bar-item w3-button text-center bg-danger text-light">Logout</a>
+</div>
+
+
+
+  <nav class="navbar bg-dark navbar-dark">
+      <a class="navbar-brand" href=""#><img src="images/logo.png" alt="Logo" /></a>
+      <button class="btn btn-dark btn-lg" onclick="nav_open();">
+      ☰
+      </button>
+  </nav>
+	<div class="container">
+	</div>
+</body>
+
+</html>
+
