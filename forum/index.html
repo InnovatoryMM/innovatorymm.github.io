@@ -19,6 +19,11 @@ function nav_close() {
     document.getElementById("sidebar").style.display = "none";
 }
 </script>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#modal').modal('show');
+    });
+</script>
 
 </head>
 <body style="background-image:url('../images/bg.png'); background-repeat: repeat;">
@@ -37,7 +42,21 @@ function nav_close() {
 
     <a href="#" class="w3-bar-item w3-button text-center bg-danger text-light">Logout</a>
 </div>
-
+<div class="modal fade" id="modal"  data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">        
+        <div class="modal-header">
+          <h4 class="modal-title">Log In to Continue</h4>
+        </div>        
+        <div class="modal-body">It won't take that long!</div>
+        <div class="modal-footer">
+        <a href="../login.html">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Log In</button>
+          </a>
+        </div>        
+      </div>
+    </div>
+  </div>
 
 
   <nav class="navbar bg-dark navbar-dark">
