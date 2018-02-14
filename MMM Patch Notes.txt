@@ -2,7 +2,7 @@ To be added
 ------------
 
 - Gender
-- Font Awesome Icons
+- Sidebar, outside click - close
 
 
 
@@ -15,7 +15,7 @@ To be improved
 Adjustments
 ------------
 
-- Forum (temporary) - 4 (pwal), general - community
+
 
 
 
