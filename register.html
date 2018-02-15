@@ -5,44 +5,123 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+function nav_open() {
+    document.getElementById("sidebar").style.display = "block";
+}
+function nav_close() {
+    document.getElementById("sidebar").style.display = "none";
+}
+</script>
+
+<script>
+   function checkForm(form)
+  {
+    if(form.studentname.value == "") {
+      alert("Error: Our ducks-in-charge do not allow nameless students!");
+      form.studentname.focus();
+      return false;
+    }
+
+    sn = /^[a-zA-Z\s]+$/;
+    re = /^\w+$/;
+
+
+    if(!sn.test(form.studentname.value)) {
+      alert("Error: Our ducks-in-charge think you should only have letters in your name!");
+      form.studentname.focus();
+      return false;
+    }
+
+    if(form.spwd1.value != "" && form.spwd1.value == form.spwd2.value) {
+      if(form.spwd1.value.length < 6) {
+        alert("Error: Our ducks-in-charge enforce a rule of passwords greater than 6 characters!");
+        form.spwd1.focus();
+        return false;
+      }
+      if(form.pwd1.value == form.studentname.value) {
+        alert("Error: Our ducks-in-charge think only dummies use names for password!");
+        form.spwd1.focus();
+        return false;
+      }
+      re = /[0-9]/;
+      if(!re.test(form.spwd1.value)) {
+        alert("Error: Our ducks-in-charge want a number in your password!");
+        form.spwd1.focus();
+        return false;
+      }
+      re = /[a-z]/;
+      if(!re.test(form.spwd1.value)) {
+        alert("Error: Our ducks-in-charge want one lowercase letter (a-z) in your password!");
+        form.spwd1.focus();
+        return false;
+      }
+      re = /[A-Z]/;
+      if(!re.test(form.spwd1.value)) {
+        alert("Error: Our ducks-in-charge want one uppercase letter (A-Z) in your password!");
+        form.spwd1.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Our genius ducks sense your passwords don't match!");
+      form.spwd1.focus();
+      return false;
+    }
+
+
+    return true;
+  }
+</script>
+
 </head>
-<body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  		<a class="navbar-brand" href="#">Navbar</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-  		<span class="navbar-toggler-icon"></span>
-  		</button>
-  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-  		  <ul class="navbar-nav">
-  		    <li class="nav-item">
-  		      <a class="nav-link" href="#">FORUM</a>
-  		    </li>
-  		    <li class="nav-item">
-  		      <a class="nav-link" href="#">ABOUT US</a>
-  		    </li>
-  		    <li class="nav-item">
-  		      <a class="nav-link" href="#">SIGN IN</a>
-  		    </li>
-  		    <li class="nav-item">
-  		      <a class="nav-link" href="#">SIGN UP</a>
-  		    </li>    
-  		  </ul>
-  		</div>  
-	</nav>
+<body style="background-image:url('../images/bg.png'); background-repeat: repeat;">
+
+<div class="w3-sidebar w3-bar-block w3-border-left w3-animate-right" style="display:none; right:0;" id="sidebar">
+  <div class="" style="height:76px">
+    <button  style="height:76px" class="btn btn-lg btn-block" onclick="nav_close()" class="w3-bar-item w3-large">☰</button>
+  </div>
+  <a href="#" class="w3-bar-item"><img src="../images/profile.gif" alt="Profile Pic" class="img-fluid rounded-circle" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" /></a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Sign In</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Sign Up</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Create a Topic</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Inbox</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">Forum</a>
+    <a href="#" class="w3-bar-item w3-button text-center" style="text-decoration: none;">About Us</a>
+
+    <a href="#" class="w3-bar-item w3-button text-center bg-danger text-light">Logout</a>
+</div>
+
+
+
+  <nav class="navbar bg-dark navbar-dark">
+      <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="Logo" /></a>
+      <form class="form-inline" action="/action_page.php" style="margin:0 auto; width:75%">
+    <input class="form-control" type="text" placeholder="Search" style="width:75%" />
+    <button class="btn btn-success" type="submit"><i class="material-icons" style="font-size:16px">search</i></button>
+  </form>
+      <button class="btn btn-dark btn-lg" onclick="nav_open();">
+      ☰
+      </button>
+  </nav>
+  <br /> <br /> 
   <div class="container"> 
-    <br />
   <h2>Sign Up</h2>
-  <ul class="nav nav-tabs">
+  <hr />
+    <br />
+  <!-- <ul class="nav nav-tabs">
     <li class="nav-item"><a data-toggle="tab" href="#student" class="nav-link active">For Students</a></li>
     <li class="nav-item"><a data-toggle="tab" href="#club" class="nav-link">For Clubs</a></li>  
   </ul>
   <br />
-  <div class="tab-content">
+  <div class="tab-content"> -->
     <div id="student" class="tab-pane active">
-    <form class="form-horizontal" name="Student Registration" action="">        
+    <form class="form-horizontal" name="Student Registration" action="" onsubmit="return checkForm(this);">        
       <div class="form-group">
         <label class="control-label col-sm-2" for="studentname">Full Name:</label>
         <div class="col-sm-10">
@@ -112,6 +191,7 @@
       </div>
     </form>
   </div>
+  <!--
   <div id="club" class="tab-pane fade">
     <form class="form-horizontal" name="Club Registration" action="">      
       <div class="form-group">
@@ -164,8 +244,9 @@
         </div>
       </div>
     </form>
-  </div>
+  </div> -->
 </div>
+<hr />
 </div>
 </body>
 
